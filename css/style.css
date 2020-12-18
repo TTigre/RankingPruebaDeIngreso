@@ -28,3 +28,11 @@ div div{
     font-size: 30px;
     font-weight: bold;
 }
+.modal-title{
+    color: grey;
+}
+
+.modal-body p{
+    color: gray;
+    font-weight: 300;
+}

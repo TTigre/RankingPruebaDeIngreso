@@ -30,6 +30,7 @@ function CargaResultado(){
     else
     {
         console.log("No encontrado")
+        $(".modal").modal()
     }
 
     var persona=dictFinal[CI]

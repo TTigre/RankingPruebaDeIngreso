@@ -8,6 +8,11 @@ h1{
     text-align: center;
 }
 
+.form-control{
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
 div{
     color: white;
     text-align: center;

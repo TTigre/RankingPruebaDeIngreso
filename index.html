@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ranking Pruebas de Ingreso</title>
+
+  <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" type="text/css" media="screen"/>
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="screen"/>
+
+  <!-- JQuery -->
+  <script src="js/jquery-3.5.1.min.js"></script>
+
+  <!-- Bootstrap -->
+  <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="js/bootstrap/bootstrap.min.js"></script>
+  <script src="js/onLoad.js"></script>
+
+  <!-- Manipulación de Datos -->
+</head>
+<body>
+  <h1 id="TheTitle" class="container">Mi posición en la prueba de ingreso</h1>
+  <section class="container">
+    <p>
+      Dado el CI te permite saber la posición en el escalafón actual sin considerar promedio anterior o revisión. Para aportar o señalar dirigirse a <a href="https://github.com/TTigre/RankingPruebaDeIngreso">https://github.com/TTigre/RankingPruebaDeIngreso</a>.
+    </p>
+  </section>
+  <form class="form-inline container">
+    <label for="CI" class="form-control">CI:</label>
+    <input id="CI" class="form-control" type="number" name="CI">
+    <input type="button" onclick="CargaResultado()" class="form-control btn btn-primary btnSeccion" id="Buscar" value="Buscar"/>
+    <!-- <button id="Buscar" class="form-control" onclick="CargaResultado()">Buscar</button> -->
+  </form>
+  <section id="Results" class="container" hidden>
+    <div id="Tipo" class="card card-header bg-primary">Concurso</div>
+    <div class="card card-header bg-primary">Posición
+      <div class="card-body" id="pos">1</div>
+    </div>
+    <div class="card card-header bg-primary">Nombre
+      <div class="card-body" id="nombre">José Gabriel Navarro Comabella</div>
+    </div>
+    <div class="card card-header bg-primary">Matemática
+      <div class="card-body" id="mat">100</div>
+    </div>
+    <div class="card card-header bg-primary">Español
+      <div class="card-body" id="esp">100</div>
+    </div>
+    <div class="card card-header bg-primary">Total
+      <div class="card-body" id="total">100</div>
+    </div>
+  </section>
+</body>
+</html>

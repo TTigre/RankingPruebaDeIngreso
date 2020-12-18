@@ -1,0 +1,25 @@
+.card{
+    margin-top: 50px;
+}
+
+h1{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+div{
+    color: white;
+    text-align: center;
+    display: inline-block;
+}
+
+#Tipo{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+div div{
+    font-size: 30px;
+    font-weight: bold;
+}

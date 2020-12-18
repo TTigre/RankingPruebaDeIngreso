@@ -25,27 +25,6 @@
       Dado el CI te permite saber la posición en el escalafón actual sin considerar promedio anterior o revisión. Para aportar o señalar dirigirse a <a href="https://github.com/TTigre/RankingPruebaDeIngreso">aquí</a>. Solo válido para Cuba.
     </p>
   </section>
-  <!-- Modal -->
-<div class="modal fade" id="mymodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">No encontrado</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <p>
-          No ha sido posible encontrar su CI en nuestros datos
-        </p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
   <form class="form-inline container">
     <label for="CI" class="form-control">CI:</label>
     <input id="CI" class="form-control" placeholder="CI aquí" type="number" name="CI">
@@ -66,9 +45,33 @@
     <div class="card card-header bg-primary">Español
       <div class="card-body" id="esp">100</div>
     </div>
-    <div class="card card-header bg-primary">Total
+    <div class="card card-header bg-primary">Historia
+      <div class="card-body" id="hist">100</div>
+    </div>
+    <div class="card card-header bg-primary">Nota Total
       <div class="card-body" id="total">100</div>
     </div>
+      <!-- Modal -->
+<div class="modal fade" id="mymodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">No encontrado</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>
+          No ha sido posible encontrar su CI en nuestros datos
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
     <h1 hidden>Con amor del Tigre para su Princesa Alicia</h1>
   </section>
 </body>

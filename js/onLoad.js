@@ -38,6 +38,7 @@ function CargaResultado(){
     $("#total").html(persona[1])
     $("#mat").html(persona[2])
     $("#esp").html(persona[3])
-    $("#nombre").html(persona[4])
+    $("#hist").html(persona[4])
+    $("#nombre").html(persona[5])
     $("#Results").removeAttr("hidden")
 }

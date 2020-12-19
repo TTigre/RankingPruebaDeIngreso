@@ -1,11 +1,20 @@
 var dictConcurso = new Object();
 var dictNormal = new Object();
+var dictConcursoUCLV = new Object();
+var dictNormalUCLV = new Object();
+
 $(document).ready(function(){
     $.getJSON("jsons/concurso.json", function(result) {
         dictConcurso=result
     })
     $.getJSON("jsons/pre.json", function(result) {
         dictNormal=result
+    })
+    $.getJSON("jsons/concursoUCLV.json", function(result) {
+        dictConcursoUCLV=result
+    })
+    $.getJSON("jsons/preUCLV.json", function(result) {
+        dictNormalUCLV=result
     })
 })
 
@@ -19,13 +28,27 @@ function CargaResultado(){
     }
     if(CI in dictConcurso)
     {
+        $("#lugar").html("UH")
         $("#Tipo").html("Concurso")
         dictFinal=dictConcurso
     }
     else if(CI in dictNormal)
     {
+        $("#lugar").html("UH")
         $("#Tipo").html("PreUniversitario")
         dictFinal=dictNormal
+    }
+    else if(CI in dictConcursoUCLV)
+    {
+        $("#lugar").html("UCLV")
+        $("#Tipo").html("Concurso")
+        dictFinal=dictConcursoUCLV
+    }
+    else if(CI in dictNormalUCLV)
+    {
+        $("#lugar").html("UCLV")
+        $("#Tipo").html("PreUniversitario")
+        dictFinal=dictNormalUCLV
     }
     else
     {
